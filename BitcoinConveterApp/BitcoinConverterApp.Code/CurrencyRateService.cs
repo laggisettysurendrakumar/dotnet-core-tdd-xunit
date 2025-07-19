@@ -5,17 +5,24 @@ public class CurrencyRateService
 {
 
 
-public CurrencyRateService(){
+    public CurrencyRateService()
+    {
 
-}
-
-public double FetchRate(string currencyCode){
-
-    if(currencyCode.Equals("USD")){
-        return 98;
     }
 
-    return 10;
-}
+    public async Task<int> FetchRate(string currencyCode)
+    {
+
+        if (currencyCode.Equals("USD"))
+        {
+            return 98;
+        }
+        else if (currencyCode.Equals("INR"))
+        {
+            return 86;
+        }
+
+        return 10;
+    }
 
 }

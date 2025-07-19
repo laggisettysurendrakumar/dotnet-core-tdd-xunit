@@ -17,7 +17,23 @@ public class CurrencyRateServiceTests
         //assert
         var expectedRate = 98;
 
-        Assert.Equal(expectedRate,acutalRate);
+        Assert.Equal(expectedRate,acutalRate.Result);
+
+    }
+
+    [Fact]
+    public void FetchRate_INR_ReturnsExpectedRate()
+    {
+        //arrange
+        var rateService = new CurrencyRateService();
+
+        //act 
+        var acutalRate = rateService.FetchRate("INR");
+
+        //assert
+        var expectedRate = 86;
+
+        Assert.Equal(expectedRate, acutalRate.Result);
 
     }
 }
