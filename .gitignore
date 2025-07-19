@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BitcoinConveterApp/BitcoinConverterApp.Code/bin/Debug/net8.0
+/BitcoinConveterApp/BitcoinConverterApp.Code/obj
+/BitcoinConveterApp/.vs/BitcoinConveterApp
+/BitcoinConveterApp/BitcoinConverterApp.Tests/bin/Debug/net8.0
+/BitcoinConveterApp/BitcoinConverterApp.Tests/obj
