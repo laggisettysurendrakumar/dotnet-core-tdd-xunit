@@ -7,3 +7,4 @@
 /BitcoinConveterApp/.vs/BitcoinConveterApp
 /BitcoinConveterApp/BitcoinConverterApp.Tests/bin/Debug/net8.0
 /BitcoinConveterApp/BitcoinConverterApp.Tests/obj
+*.bin
