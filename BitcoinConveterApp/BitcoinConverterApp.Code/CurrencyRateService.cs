@@ -10,7 +10,7 @@ public class CurrencyRateService
 
     }
 
-    public async Task<int> FetchRate(string currencyCode)
+    public async Task<int> FetchCurrencyRate(string currencyCode)
     {
 
         if (currencyCode.Equals("USD"))
@@ -23,6 +23,12 @@ public class CurrencyRateService
         }
 
         return 10;
+    }
+
+    public async Task<int> GetDollarRateFromBitcoins(string currencyCode, int coins)
+    {
+        var totalDollars = await FetchCurrencyRate(currencyCode) * coins;
+        return totalDollars;
     }
 
 }
